@@ -31,14 +31,14 @@ def input_to_index(input)
 end
 
 def move(board, index, token = "X")
-  move = board[index.to_i] = token
+  board[index.to_i] = token
 end
 
 def turn(board)
 puts "Please enter 1-9:"
 input = gets.strip
 index = input_to_index(input)
-if valid_move?(board, index) == true 
+if valid_move?(board, index) == true
   puts "Please enter 1-9:"
 end
 
