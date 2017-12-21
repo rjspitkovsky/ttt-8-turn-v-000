@@ -45,5 +45,5 @@ valid_move?(board, index)
   #end
 
 
-
+display_board(board)
 end
