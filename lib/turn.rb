@@ -43,8 +43,7 @@ if valid_move?(board, index) == true
   move(board, index, token = "X")
 elsif valid_move?(board, index) == false
     puts "Please enter 1-9"
-    input = gets.strip
-    index = input_to_index(input)
+    turn(board)
 end
 
 display_board(board)
