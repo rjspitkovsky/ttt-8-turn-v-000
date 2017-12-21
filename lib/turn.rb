@@ -43,7 +43,7 @@ index = input_to_index(input)
     display_board(board)
   #else
     #turn(board)
-  end
+  #end
 
 
 
