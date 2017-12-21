@@ -12,16 +12,20 @@ def display_board(board)
 
  end
 
-def valid_move?(board, index) 
+def valid_move?(board, index)
     if index > -1 && index < 9 && position_taken?(board, index) == false
-      true 
-    end 
-end 
+      true
+    end
+end
 
 def position_taken?(board, index)
   if board[index] == "X" || board[index] == "O"
-    true 
-  elsif board[index] == " " || "" || nil 
-    false 
-  end 
-end 
+    true
+  elsif board[index] == " " || "" || nil
+    false
+  end
+end
+
+def input_to_index(input)
+  input.to_i - 1
+end
